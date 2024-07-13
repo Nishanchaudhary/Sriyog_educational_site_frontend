@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link rel="stylesheet" href="style.css">
+<script src="javascript/script.js"></script>
+<style>
+  /* CSS for color gradient animation */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+  }
+  .gradient-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #8EC5FC, #E0C3FC, #FFFFFF, #91f1ce);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Other CSS styles */
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  
+  }
+
+  .content {
+    max-width: 800px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 9px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color:#68d0e2;
+  }
+
+  .text,p {
+    color:#68d0e2;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+
+  }
+
+  /* CSS for interactive elements */
+  .team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    color:#68d0e2;
+  } 
+  .team-member, h3{
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  h2{
+    color:#68d0e2;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  .team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .team-member img:hover {
+    transform: scale(1.1);
+  }
+ 
+  button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px;
+  background-image: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+</style> 
+</head>
+<body>
+<div class="gradient-bg"></div><br>
+<br>
+<br><br<br>
+<div class="container">
+  <div class="content">
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h1>About Us</h1>
+    <div class="text">
+    <p>Sriyog Educational Pvt.Ltd is a global language learning platform . 
+        where people of different ages gain an education. These institutions 
+        provide a variety of learning environments and learning spaces. Such 
+        as English language, IELTS, PTE, UKVI, Bridge Course, Japanes, Korean,
+         Garman, Chinese and tuition classes.</p>
+        </div>
+    
+    <h2>Meet Our Developer Team</h2>
+    <div class="team-member">
+        <div class="image1" style="text-align: center;">
+            <img src="image/nishan.jpg" alt="Team Member 1">
+            <p  style="text-align: center;"><span>Developer</span></p>
+            <h3>Nishan Kumar Chaudhary</h3>
+           <button> <a href="tel:9824610086">Call</a></button>
+           <button><a href="mailto:nishanads77@gmail.com"> E-mail</a></button>
+        </div>    
+       <div class="image2" style="text-align: center;">
+            <img src="image/madan2.jpg" alt="Team Member 2">
+            <p style="text-align: center;"><span>Developer</span></p>
+            <h3>Madan Chand</h3>
+            <button><a href="tel:9860010407"> Call</a></button>
+            <button><a href="mailto:sriyog79@gmail.com"> E-mail</a></button>
+        </div>
+      <!-- Add more team members as neede -->
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <div id="progress ">
+        <span id="progress-value ">
+        <i class='bx bxs-chevrons-up' ></i>
+        </span>
+    </div>
+ </footer>
+ <script>
+  // JavaScript for a simple animation
+  window.addEventListener('load', function() {
+    const content = document.querySelector('.content');
+    content.style.opacity = '0';
+    content.style.transform = 'translateY(50px)';
+    setTimeout(() => {
+      content.style.transition = 'opacity 1s ease, transform 1s ease';
+      content.style.opacity = '1';
+      content.style.transform = 'translateY(0)';
+    }, 500);
+  });
+</script>
+ <!-- scroll reveal  -->
+  <script src="https://unpkg.com/scrollreveal "></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js "></script>
+  <!-- mixitup cdn js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js "></script>
+
+</body>
+</html>
